@@ -81,3 +81,16 @@ def zad2a(min,max,ile):
     return lista2
 
 print (zad2a(-10,10,5))
+
+#def zad3a(nazwa_pliku):
+
+def zad4a(a,b,c):
+    if (a > 0) & (b > 0) & (c > 0):
+        if a*a + b*b == c*c:
+            return a*b/2
+        else:
+            return "Nie podano poprawnych wartosci"
+    else:
+        return "Nie podano poprawnych wartosci"
+
+print(zad4a(3,4,5))
