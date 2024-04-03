@@ -82,7 +82,16 @@ def zad2a(min,max,ile):
 
 print (zad2a(-10,10,5))
 
-#def zad3a(nazwa_pliku):
+def zad3a(nazwa_pliku):
+    plik = open(nazwa_pliku, "r")
+    linie = plik.readlines()
+    pierwszaLinia = linie[0].split()
+    liczbaKolumn = len(pierwszaLinia)
+    for i in linie:
+        liczby = i.split()
+        print(liczby)
+
+zad3a("liczby.txt")
 
 def zad4a(a,b,c):
     if (a > 0) & (b > 0) & (c > 0):
