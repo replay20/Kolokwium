@@ -55,3 +55,13 @@ def zad4(a,h):
         return "Podano nieprawidlowe wartosci"
 
 print(zad4(4,5))
+
+
+def zad1a():
+    wynik=0
+    for x in range(14,33):
+        dzialanie = ((x ** math.e) + math.cos(x)) ** (1/5)
+        wynik += dzialanie
+    return round(wynik,2)
+
+print(zad1a())
