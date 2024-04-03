@@ -45,3 +45,13 @@ def zad3(nazwa_pliku):
     return suma
 
 print(zad3("liczby.txt"))
+
+def zad4(a,h):
+
+    if(a>0) & (h>0):
+        pole = (a*a*2) + (4*a*h)
+        return pole
+    else:
+        return "Podano nieprawidlowe wartosci"
+
+print(zad4(4,5))
