@@ -65,3 +65,19 @@ def zad1a():
     return round(wynik,2)
 
 print(zad1a())
+
+def zad2a(min,max,ile):
+    lista = []
+    if (max > min) & ile > 0:
+        for x in range(ile):
+            lista.append(random.randint(min, max))
+        print(lista)
+    else:
+        print("Podano nieprawidlowe wartosci")
+
+    lista2 = []
+    for y in range(len(lista)):
+        lista2.append(-lista[y])
+    return lista2
+
+print (zad2a(-10,10,5))
