@@ -27,3 +27,21 @@ def zad2(min,max,ile):
     return(lista2)
 
 print(zad2(1,10,5))
+
+def zad3(nazwa_pliku):
+    plik = open(nazwa_pliku, "r")
+    linie = plik.readlines()
+#print(linie)
+    pierwszaLinia = linie[0].split()
+#print(pierwszaLinia)
+    liczbaKolumn = len(pierwszaLinia)
+#print(liczbaKolumn)
+    suma=[0]*liczbaKolumn
+#print(suma)
+    for i in linie:
+        liczby = i.split()
+        for j in range(liczbaKolumn):
+            suma[j]+= int(liczby[j])
+    return suma
+
+print(zad3("liczby.txt"))
